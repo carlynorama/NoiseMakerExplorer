@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D276E04429BE742900D1FE7F /* NoiseMaker in Frameworks */ = {isa = PBXBuildFile; productRef = D276E04329BE742900D1FE7F /* NoiseMaker */; };
 		D2C42C7629BE72C1000F8C34 /* NoiseMakerExplorerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C42C7529BE72C1000F8C34 /* NoiseMakerExplorerApp.swift */; };
 		D2C42C7829BE72C1000F8C34 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C42C7729BE72C1000F8C34 /* ContentView.swift */; };
 		D2C42C7A29BE72C2000F8C34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2C42C7929BE72C2000F8C34 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 		D2C42C7929BE72C2000F8C34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2C42C7B29BE72C2000F8C34 /* NoiseMakerExplorer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NoiseMakerExplorer.entitlements; sourceTree = "<group>"; };
 		D2C42C7D29BE72C2000F8C34 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D2C42C8529BE72E7000F8C34 /* NoiseMaker */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = NoiseMaker; path = ../NoiseMaker; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +29,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D276E04429BE742900D1FE7F /* NoiseMaker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D276E04229BE742900D1FE7F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D2C42C6929BE72C1000F8C34 = {
 			isa = PBXGroup;
 			children = (
+				D2C42C8429BE72E7000F8C34 /* Packages */,
 				D2C42C7429BE72C1000F8C34 /* NoiseMakerExplorer */,
 				D2C42C7329BE72C1000F8C34 /* Products */,
+				D276E04229BE742900D1FE7F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +81,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		D2C42C8429BE72E7000F8C34 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				D2C42C8529BE72E7000F8C34 /* NoiseMaker */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -85,6 +105,9 @@
 			dependencies = (
 			);
 			name = NoiseMakerExplorer;
+			packageProductDependencies = (
+				D276E04329BE742900D1FE7F /* NoiseMaker */,
+			);
 			productName = NoiseMakerExplorer;
 			productReference = D2C42C7229BE72C1000F8C34 /* NoiseMakerExplorer.app */;
 			productType = "com.apple.product-type.application";
@@ -350,6 +373,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D276E04329BE742900D1FE7F /* NoiseMaker */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NoiseMaker;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D2C42C6A29BE72C1000F8C34 /* Project object */;
 }
