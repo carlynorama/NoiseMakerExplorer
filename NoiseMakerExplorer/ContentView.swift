@@ -8,6 +8,7 @@
 import SwiftUI
 import Charts
 import NoiseMaker
+import SwiftLIBPNG
 
 struct ContentView: View {
     let myVals = NoiseMaker.blurredRandomArray(count: 16, octaves: 8, scalingBias: 1)
@@ -24,6 +25,12 @@ struct ContentView: View {
             Button("Print 2d") {
                 print2D()
             }
+            Button("Verify libpng") {
+                version()
+            }
+            Button("Test Image Creation") {
+                testPNGCreation()
+            }
         }
         .padding()
     }
@@ -33,6 +40,17 @@ struct ContentView: View {
         let noise = NoiseMaker.perlinWrapper(x: Double.random(in: 0...1), y: Double.random(in: 0...1))
         print("\nperlin: \(noise)")
     }
+    
+    func version() {
+        print("version")
+        SwiftLIBPNG.version()
+    }
+    
+    func testPNGCreation() {
+        let _ = SwiftLIBPNG.makeTestImage(width:200, height:200, red:102, green:153, blue:204)
+    }
+    
+    
 }
 
 struct ContentView_Previews: PreviewProvider {

@@ -12,6 +12,7 @@
 		D2C42C7829BE72C1000F8C34 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C42C7729BE72C1000F8C34 /* ContentView.swift */; };
 		D2C42C7A29BE72C2000F8C34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2C42C7929BE72C2000F8C34 /* Assets.xcassets */; };
 		D2C42C7E29BE72C2000F8C34 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2C42C7D29BE72C2000F8C34 /* Preview Assets.xcassets */; };
+		DA0240CA29C7AED100A4DB37 /* SwiftLIBPNG in Frameworks */ = {isa = PBXBuildFile; productRef = DA0240C929C7AED100A4DB37 /* SwiftLIBPNG */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		D2C42C7B29BE72C2000F8C34 /* NoiseMakerExplorer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NoiseMakerExplorer.entitlements; sourceTree = "<group>"; };
 		D2C42C7D29BE72C2000F8C34 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D2C42C8529BE72E7000F8C34 /* NoiseMaker */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = NoiseMaker; path = ../NoiseMaker; sourceTree = "<group>"; };
+		DA43755B29C7AE9B00B2AE7A /* SwiftLIBPNG */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SwiftLIBPNG; path = ../SwiftLIBPNG; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA0240CA29C7AED100A4DB37 /* SwiftLIBPNG in Frameworks */,
 				D276E04429BE742900D1FE7F /* NoiseMaker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -85,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				D2C42C8529BE72E7000F8C34 /* NoiseMaker */,
+				DA43755B29C7AE9B00B2AE7A /* SwiftLIBPNG */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
@@ -107,6 +111,7 @@
 			name = NoiseMakerExplorer;
 			packageProductDependencies = (
 				D276E04329BE742900D1FE7F /* NoiseMaker */,
+				DA0240C929C7AED100A4DB37 /* SwiftLIBPNG */,
 			);
 			productName = NoiseMakerExplorer;
 			productReference = D2C42C7229BE72C1000F8C34 /* NoiseMakerExplorer.app */;
@@ -378,6 +383,10 @@
 		D276E04329BE742900D1FE7F /* NoiseMaker */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = NoiseMaker;
+		};
+		DA0240C929C7AED100A4DB37 /* SwiftLIBPNG */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SwiftLIBPNG;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
